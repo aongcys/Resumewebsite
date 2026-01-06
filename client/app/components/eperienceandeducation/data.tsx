@@ -2,7 +2,6 @@ export interface Project {
   name: string;
   description: string;
   date: string;
-  tag?: string;
 }
 
 export interface Category {
@@ -21,28 +20,24 @@ export const experienceData: Category[] = [
     items: [
       {
         name: "Maily Space",
-        tag: "Figma",
         description:
           "Design a website that provides temporary email developed as part of a project by RDCW Co., Ltd.",
         date: "Freelance 2025",
       },
       {
         name: "3D Map Thaiwater",
-        tag: "Figma",
         description:
           "Intuitive web platform for KML route management, featuring seamless 2D and immersive 3D visualizations.",
         date: "1 Aug 2025 - Present",
       },
       {
         name: "Nami massage",
-        tag: "Figma",
         description:
           "Designing website featuring an intuitive booking system and role-specific dashboards for clients, therapists, and venue owners.",
         date: "15 Dec 2024 - 1 Apr 2025",
       },
       {
         name: "Kabshop",
-        tag: "Figma",
         description:
           "An intuitive end-to-end E-commerce platform featuring organized product categories and a seamless path from browsing to checkout.",
         date: "24 Sep 2024 - 3 Nov 2024",
@@ -56,10 +51,15 @@ export const experienceData: Category[] = [
       "Bringing beautiful designs to life through high-performance code and seamless UX.",
     items: [
       {
-        name: "Kabshop",
-        tag: "Figma",
+        name: "Nami massage",
         description:
-          "An intuitive end-to-end E-commerce platform featuring organized product categories and a seamless path from browsing to checkout.",
+          "Developed an intuitive booking system using Next.js, featuring specialized multi-role dashboards for clients, therapists, and administrators. Optimized data flow through robust RESTful API integration.",
+        date: "15 Dec 2024 - 1 Apr 2025",
+      },
+      {
+        name: "Kabshop",
+        description:
+          "An intuitive end-to-end E-commerce platform featuring organized product categories and a seamless path from browsing to checkout. Using React NextJs",
         date: "24 Sep 2024 - 3 Nov 2024",
       },
     ],

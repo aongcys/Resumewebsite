@@ -6,9 +6,9 @@ import { FaFigma } from "react-icons/fa";
 function Aboutme() {
   return (
     <div id="about" className="flex flex-col w-full gap-10">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 px-6 md:px-20 mt-5">
-        <div className="flex flex-col justify-between">
-          <div className="text-6xl md:text-8xl font-semibold self-start mt-15">
+      <div className="relative flex md:grid md:grid-cols-3 md:gap-10 px-6 md:px-20 md:mt-5">
+        <div className="flex flex-col md:justify-between gap-2">
+          <div className="text-5xl md:text-8xl font-semibold self-start md:mt-15">
             <p>Frontend</p>
             <p>Developer</p>
           </div>
@@ -29,7 +29,7 @@ function Aboutme() {
             alt="About me"
             width={500}
             height={500}
-            className="w-full h-auto max-w-120"
+            className="w-full h-auto max-w-60 md:max-w-120"
           />
         </div>
         <div className="text-6xl md:text-8xl pb-8 font-semibold self-end justify-end items-end text-right">

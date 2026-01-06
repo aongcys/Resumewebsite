@@ -13,17 +13,17 @@ function ExperienceAndEducation() {
         <p className="text-3xl font-semibold">Experience & Education</p>
         <div className="absolute bottom-0 right-0 w-5/12 h-16 border-b border-black"></div>
       </div>
-      <div className="w-full max-w-7xl flex flex-col gap-8">
+      <div className="w-full max-w-7xl flex flex-col gap-8 px-10">
         {experienceData.map((category) => (
           <div
             key={category.id}
-            className="border border-black overflow-hidden"
+            className="border border-black overflow-hidden w-full"
           >
             <button
               onClick={() =>
                 setOpenId(openId === category.id ? null : category.id)
               }
-              className={`w-full flex justify-between items-center p-6 text-left transition-colors duration-300 ${
+              className={`w-full flex justify-between items-center p-6 text-left transition-colors duration-300 w-full ${
                 openId === category.id
                   ? "bg-black text-white"
                   : "bg-white text-black hover:bg-black hover:text-white"
@@ -46,31 +46,36 @@ function ExperienceAndEducation() {
                 </span>
               </div>
             </button>
-
             <div
-              className={`transition-all duration-1500 ease-in-out ${
-                openId === category.id ? "max-h-500 opacity-100" : "max-h-0"
+              className={`grid transition-all duration-1500 ease-in-out ${
+                openId === category.id ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
               }`}
             >
-              <div className="p-8 flex flex-col gap-5 bg-white">
-                {category.items.map((item, idx) => (
-                  <div
-                    key={idx}
-                    className="flex flex-col md:flex-row justify-between gap-4 border-b border-gray-300 pb-8 last:border-0"
-                  >
-                    <div className="px-4 flex-1">
-                      <div className=" flex items-center gap-2 mb-2">
-                        <h4 className="text-2xl font-bold ">{item.name}</h4>
+              <div className="overflow-hidden">
+                <div className="p-8 flex flex-col bg-white">
+                  {category.items.map((item, idx) => (
+                    <div key={idx} className="flex flex-col items-center">
+                      {idx !== 0 && (
+                        <div className="w-4xl border-t border-neutral-300 my-6"></div>
+                      )}
+                      <div className="flex flex-col md:flex-row justify-between gap-4 w-full px-10">
+                        <div className="flex-1">
+                          <h4 className="text-2xl font-bold mb-2">
+                            {item.name}
+                          </h4>
+                          <p className="text-black max-w-xl font-[family-name:var(--font-nunito-sans)]">
+                            {item.description}
+                          </p>
+                        </div>
+                        <div className="text-neutral-500 text-base md:text-right flex items-center md:justify-end">
+                          <div className="border-l border-neutral-500 pl-4 h-5 flex items-center min-w-60">
+                            {item.date}
+                          </div>
+                        </div>
                       </div>
-                      <p className="text-black max-w-xl font-[family-name:var(--font-nunito-sans)]">
-                        {item.description}
-                      </p>
                     </div>
-                    <div className="text-gray-600 text-base md:text-right border-l md:border-l-2 border-gray-600 pl-4 min-w-[300px] flex items-center">
-                      {item.date}
-                    </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
