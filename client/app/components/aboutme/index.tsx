@@ -56,15 +56,13 @@ function Aboutme() {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <EnterAnimation>
-            <Img
-              src="/photo.png"
-              alt="About me"
-              width={500}
-              height={500}
-              className="w-full h-auto max-w-60 md:max-w-120"
-            />
-          </EnterAnimation>
+          <Img
+            src="/photo.png"
+            alt="About me"
+            width={500}
+            height={500}
+            className="w-full h-auto max-w-60 md:max-w-120"
+          />
         </div>
         <div className="text-6xl md:text-8xl pb-8 font-semibold self-end justify-end items-end text-right">
           <div>

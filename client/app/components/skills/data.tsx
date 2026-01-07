@@ -5,6 +5,7 @@ import {
   FaGithub,
   FaPython,
 } from "react-icons/fa";
+import { BiLogoTypescript } from "react-icons/bi";
 import { RiJavascriptFill } from "react-icons/ri";
 import {
   SiCanva,
@@ -96,7 +97,7 @@ export const skillsData: Category[] = [
       {
         name: "TypeScript",
         icon: (
-          <SiTypescript className="text-blue-700 group-hover:text-white transition-all duration-500" />
+          <BiLogoTypescript className="text-blue-700 group-hover:text-white transition-all duration-500" />
         ),
       },
       {

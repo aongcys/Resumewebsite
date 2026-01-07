@@ -39,7 +39,7 @@ function Desktopnavbar({ activeSection }: { activeSection: string }) {
           <FaGithub size={32} />
         </a>
         <a
-          href="resume_chayaphat.pdf"
+          href="https://drive.google.com/drive/folders/1hIaptp4URZnjMXNU3kWkIfuh9uavsP4H?usp=sharing"
           target="_blank"
           className="flex gap-2 justify-center items-center rounded-full bg-white text-black p-2 md:px-4 py-2 border border-black hover:bg-black hover:text-white hover:border-white transition-all duration-500 cursor-pointer"
         >
