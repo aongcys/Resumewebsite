@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { experienceData } from "./data";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
+import { div } from "motion/react-client";
 
 function ExperienceAndEducation() {
   const [openId, setOpenId] = useState<number | null>(1);
@@ -23,7 +24,7 @@ function ExperienceAndEducation() {
               onClick={() =>
                 setOpenId(openId === category.id ? null : category.id)
               }
-              className={`w-full flex justify-between items-center p-6 text-left transition-colors duration-300 w-full ${
+              className={`w-full flex justify-between items-center p-6 text-left transition-colors duration-300 ${
                 openId === category.id
                   ? "bg-black text-white"
                   : "bg-white text-black hover:bg-black hover:text-white"
@@ -60,8 +61,17 @@ function ExperienceAndEducation() {
                       )}
                       <div className="flex flex-col md:flex-row justify-between gap-4 w-full px-5 md:px-10">
                         <div className="flex-1">
-                          <h4 className="text-2xl font-bold mb-2">
+                          <h4 className="text-2xl font-bold mb-2 flex gap-2">
                             {item.name}
+                            {item.link !== undefined && (
+                              <a
+                                href={item.link}
+                                target="_blank"
+                                className="text-sm flex items-end underline underline-offset-1 text-black font-medium hover:text-blue-800"
+                              >
+                                Visit website
+                              </a>
+                            )}
                           </h4>
                           <p className="text-black max-w-xl font-[family-name:var(--font-nunito-sans)]">
                             {item.description}

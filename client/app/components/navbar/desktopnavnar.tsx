@@ -31,11 +31,16 @@ function Desktopnavbar({ activeSection }: { activeSection: string }) {
         })}
       </div>
       <div className="flex flex-row gap-3 justify-center items-center mb-2">
-        <a className="hover:text-shadow-lg" href="https://github.com/aongcys">
+        <a
+          className="hover:text-shadow-lg"
+          href="https://github.com/aongcys"
+          target="_blank"
+        >
           <FaGithub size={32} />
         </a>
         <a
           href="resume_chayaphat.pdf"
+          target="_blank"
           className="flex gap-2 justify-center items-center rounded-full bg-white text-black p-2 md:px-4 py-2 border border-black hover:bg-black hover:text-white hover:border-white transition-all duration-500 cursor-pointer"
         >
           <FiDownload size={18} className="" />

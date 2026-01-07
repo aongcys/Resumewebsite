@@ -14,9 +14,10 @@ export const useScrollActive = (sectionIds: string[]) => {
       const isLast = index === sectionIds.length - 1;
 
       ScrollTrigger.create({
+        scrub: 1,
         trigger: `#${id}`,
         start: isLast ? "top 70%" : "top center",
-        end: "bottom center",
+        end: "bottom 60%",
         onEnter: () => setActiveSection(id),
         onEnterBack: () => setActiveSection(id),
       });

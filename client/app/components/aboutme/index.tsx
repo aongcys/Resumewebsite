@@ -1,22 +1,54 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import Img from "next/image";
 import { SiNextdotjs, SiVite, SiNestjs } from "react-icons/si";
 import { FaFigma } from "react-icons/fa";
+import TextType from "./texttype";
+import Particles from "./background";
+import EnterAnimation from "./motion";
 
 function Aboutme() {
   return (
     <div id="about" className="flex flex-col w-full gap-10">
+      <div className="absolute inset-0 z-0">
+        <Particles
+          particleColors={["#000000", "#3b82f6"]}
+          particleCount={250}
+          particleSpread={15}
+          speed={0.1}
+          particleBaseSize={180}
+          moveParticlesOnHover={true}
+          alphaParticles={true}
+          disableRotation={false}
+        />
+      </div>
       <div className="relative grid lg:grid-cols-3 lg:gap-10 px-5 lg:px-20 lg:mt-5 w-full">
         <div className="flex flex-col lg:justify-between gap-2">
-          <div className="text-5xl lg:text-8xl font-semibold md:mt-15">
-            <p>Frontend</p>
-            <p>Developer</p>
+          <div>
+            <div className="text-5xl lg:text-8xl font-semibold md:mt-15 min-h-10 lg:min-h-55">
+              <TextType
+                text="Frontend"
+                as="p"
+                typingSpeed={100}
+                loop={false}
+                showCursor={false}
+              />
+              <TextType
+                text="Developer"
+                as="p"
+                typingSpeed={100}
+                initialDelay={800}
+                loop={false}
+                showCursor={true}
+                cursorCharacter="_"
+              />
+            </div>
           </div>
           <div className="flex flex-col gap-2 pb-8">
             <p className="hidden md:block text-xl font-semibold">
               Hi, I am Chayaphat Srisiriwat
             </p>
-            <p className="hidden md:block text-lg w-8/12 font-[family-name:var(--font-nunito-sans)]">
+            <p className="hidden lg:block text-lg w-8/12 font-[family-name:var(--font-nunito-sans)]">
               Computer Science student passionate about Frontend Development and
               UX/UI design. I enjoy building clean, user-friendly interfaces and
               turning ideas into real web experiences.
@@ -24,17 +56,37 @@ function Aboutme() {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <Img
-            src="/photo.png"
-            alt="About me"
-            width={500}
-            height={500}
-            className="w-full h-auto max-w-60 md:max-w-120"
-          />
+          <EnterAnimation>
+            <Img
+              src="/photo.png"
+              alt="About me"
+              width={500}
+              height={500}
+              className="w-full h-auto max-w-60 md:max-w-120"
+            />
+          </EnterAnimation>
         </div>
         <div className="text-6xl md:text-8xl pb-8 font-semibold self-end justify-end items-end text-right">
-          <p>UX/UI</p>
-          <p>Designer</p>
+          <div>
+            <div className="grid text-5xl lg:text-8xl font-semibold md:mt-15 min-h-10 lg:min-h-55">
+              <TextType
+                text="UX/UI"
+                as="p"
+                typingSpeed={100}
+                loop={false}
+                showCursor={false}
+              />
+              <TextType
+                text="Designer"
+                as="p"
+                typingSpeed={100}
+                initialDelay={800}
+                loop={false}
+                showCursor={true}
+                cursorCharacter="_"
+              />
+            </div>
+          </div>
           <p className="md:hidden text-xl font-semibold mt-2">
             Hi, I am Chayaphat Srisiriwat
           </p>

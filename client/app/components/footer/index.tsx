@@ -16,6 +16,7 @@ function Footer() {
               <a
                 key={contract.id}
                 href={contract.link}
+                target="_blank"
                 className="group flex justify-between items-center w-full text-white border-b border-white/20 pb-2 hover:border-white transition-all duration-300"
               >
                 <div className="flex flex-row gap-4">

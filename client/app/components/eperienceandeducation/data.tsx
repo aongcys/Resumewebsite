@@ -2,6 +2,8 @@ export interface Project {
   name: string;
   description: string;
   date: string;
+  photo?: string;
+  link?: string;
 }
 
 export interface Category {
@@ -23,6 +25,8 @@ export const experienceData: Category[] = [
         description:
           "Design a website that provides temporary email developed as part of a project by RDCW Co., Ltd.",
         date: "Freelance 2025",
+        photo: "/maily.png",
+        link: "https://maily.space/",
       },
       {
         name: "3D Map Thaiwater",
@@ -35,12 +39,14 @@ export const experienceData: Category[] = [
         description:
           "Designing website featuring an intuitive booking system and role-specific dashboards for clients, therapists, and venue owners.",
         date: "15 Dec 2024 - 1 Apr 2025",
+        photo: "/massage.png",
       },
       {
         name: "Kabshop",
         description:
           "An intuitive end-to-end E-commerce platform featuring organized product categories and a seamless path from browsing to checkout.",
         date: "24 Sep 2024 - 3 Nov 2024",
+        photo: "/kabshop.png",
       },
     ],
   },
