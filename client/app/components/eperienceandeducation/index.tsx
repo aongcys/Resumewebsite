@@ -58,7 +58,7 @@ function ExperienceAndEducation() {
                       {idx !== 0 && (
                         <div className="w-4xl border-t border-neutral-300 my-6"></div>
                       )}
-                      <div className="flex flex-col md:flex-row justify-between gap-4 w-full px-10">
+                      <div className="flex flex-col md:flex-row justify-between gap-4 w-full px-5 md:px-10">
                         <div className="flex-1">
                           <h4 className="text-2xl font-bold mb-2">
                             {item.name}

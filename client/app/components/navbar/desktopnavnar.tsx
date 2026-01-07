@@ -10,7 +10,7 @@ function Desktopnavbar({ activeSection }: { activeSection: string }) {
         <p className="text-lg font-medium">Chayaphat </p>
         <p className="text-lg font-light">Sr</p>
       </a>
-      <div className=" gap-8 hidden md:flex">
+      <div className=" gap-8 hidden lg:flex">
         {navItems.map((item) => {
           const id = item.toLowerCase();
           const isActive = activeSection === id;

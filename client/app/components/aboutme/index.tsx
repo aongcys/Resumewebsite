@@ -6,17 +6,17 @@ import { FaFigma } from "react-icons/fa";
 function Aboutme() {
   return (
     <div id="about" className="flex flex-col w-full gap-10">
-      <div className="relative flex md:grid md:grid-cols-3 md:gap-10 px-6 md:px-20 md:mt-5">
-        <div className="flex flex-col md:justify-between gap-2">
-          <div className="text-5xl md:text-8xl font-semibold self-start md:mt-15">
+      <div className="relative grid lg:grid-cols-3 lg:gap-10 px-5 lg:px-20 lg:mt-5 w-full">
+        <div className="flex flex-col lg:justify-between gap-2">
+          <div className="text-5xl lg:text-8xl font-semibold md:mt-15">
             <p>Frontend</p>
             <p>Developer</p>
           </div>
           <div className="flex flex-col gap-2 pb-8">
-            <p className="text-xl font-semibold">
+            <p className="hidden md:block text-xl font-semibold">
               Hi, I am Chayaphat Srisiriwat
             </p>
-            <p className="text-lg w-8/12 font-[family-name:var(--font-nunito-sans)]">
+            <p className="hidden md:block text-lg w-8/12 font-[family-name:var(--font-nunito-sans)]">
               Computer Science student passionate about Frontend Development and
               UX/UI design. I enjoy building clean, user-friendly interfaces and
               turning ideas into real web experiences.
@@ -35,14 +35,19 @@ function Aboutme() {
         <div className="text-6xl md:text-8xl pb-8 font-semibold self-end justify-end items-end text-right">
           <p>UX/UI</p>
           <p>Designer</p>
+          <p className="md:hidden text-xl font-semibold mt-2">
+            Hi, I am Chayaphat Srisiriwat
+          </p>
         </div>
       </div>
-      <div className="bg-gray-100 h-auto w-full p-10 px-15">
+      <div className="bg-gray-100 h-auto w-full p-10 px-5 md:px-15">
         <div className="relative flex flex-col gap-3 p-5 px-15">
           <div className="absolute top-0 right-0 w-16 h-16 border-t-2 border-r-2 border-black"></div>
           <div className="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-black"></div>
+          <div className="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-black"></div>
+          <div className="absolute bottom-0 left-0 w-16 h-16 border-b-2 border-l-2 border-black"></div>
 
-          <div className="flex justify-between">
+          <div className="flex md:flex-row flex-col justify-between">
             <p className="text-3xl font-semibold">About Me</p>
             <div className="flex gap-2 mr-2 mt-2">
               <SiNextdotjs size={30} />
@@ -53,13 +58,13 @@ function Aboutme() {
           </div>
 
           <div className="flex flex-col gap-5">
-            <p className="w-2/4 text-lg font-[family-name:var(--font-nunito-sans)]">
+            <p className="w-full lg:w-2/4 text-lg font-[family-name:var(--font-nunito-sans)]">
               As a Computer Science student with a passion for Frontend
               Development and UX/UI design, I focus on crafting clean,
               user-friendly interfaces that turn creative ideas into functional
               digital experiences.
             </p>
-            <p className="w-2/4 text-lg font-[family-name:var(--font-nunito-sans)]">
+            <p className="lg:w-2/4 text-lg font-[family-name:var(--font-nunito-sans)]">
               I am currently seeking an internship opportunity where I can
               contribute to a professional team, take on real-world challenges,
               and further refine my skills.

@@ -30,19 +30,20 @@ function Footer() {
               </a>
             ))}
           </div>
-          <div className="flex flex-col justify-between h-full">
-            <div>
-              <p className="text-base text-gray-500 ">CONTACT</p>
-              <p className="text-white">
-                Email:{" "}
-                <a
-                  href="mailto:chayaphat.srisiriwat@gmail.com"
-                  className="no-underline hover:underline text-white text-lg"
-                >
-                  chayaphat.srisiriwat@gmail.com
-                </a>
-              </p>
-              <p className="text-white text-lg">Phone:+66 95-529-7478</p>
+          <div className="flex flex-col md:justify-between h-auto">
+            <p className="text-base text-gray-500 ">CONTACT</p>
+            <div className="text-white w-auto flex flex-col md:flex-row md:gap-1">
+              <p>Email: </p>
+              <a
+                href="mailto:chayaphat.srisiriwat@gmail.com"
+                className="no-underline hover:underline break-all text-white text-lg"
+              >
+                chayaphat.srisiriwat@gmail.com
+              </a>
+            </div>
+            <div className="text-white text-lg flex flex-col md:flex-row md:gap-1">
+              <p>Phone:</p>
+              <p>+66 95-529-7478</p>
             </div>
             <p className="text-gray-500 hover:text-white transition-all duration-300">
               © 2026 CHAYAPHAT SRISIRIWAT
