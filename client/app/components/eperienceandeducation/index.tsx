@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { experienceData } from "./data";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
-import { div } from "motion/react-client";
 
 function ExperienceAndEducation() {
   const [openId, setOpenId] = useState<number | null>(1);

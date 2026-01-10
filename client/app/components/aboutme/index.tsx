@@ -9,7 +9,7 @@ import EnterAnimation from "./motion";
 
 function Aboutme() {
   return (
-    <div id="about" className="flex flex-col w-full gap-10">
+    <div id="about" className="flex flex-col w-screen gap-10">
       <div className="absolute inset-0 z-0">
         <Particles
           particleColors={["#000000", "#3b82f6"]}
@@ -22,10 +22,10 @@ function Aboutme() {
           disableRotation={false}
         />
       </div>
-      <div className="relative grid lg:grid-cols-3 lg:gap-10 px-5 lg:px-20 lg:mt-5 w-full">
+      <div className="relative grid lg:grid-cols-3 lg:gap-10 px-5 lg:px-20 lg:mt-5 w-screen">
         <div className="flex flex-col lg:justify-between gap-2">
-          <div>
-            <div className="text-5xl lg:text-8xl font-semibold md:mt-15 min-h-10 lg:min-h-55">
+          <div className="">
+            <div className="text-5xl lg:text-6xl xl:text-8xl font-semibold md:mt-15 min-h-10 lg:min-h-55">
               <TextType
                 text="Frontend"
                 as="p"
@@ -48,7 +48,7 @@ function Aboutme() {
             <p className="hidden md:block text-xl font-semibold">
               Hi, I am Chayaphat Srisiriwat
             </p>
-            <p className="hidden lg:block text-lg w-8/12 font-[family-name:var(--font-nunito-sans)]">
+            <p className="hidden lg:block text-lg lg:w-full xl:w-8/12 font-[family-name:var(--font-nunito-sans)]">
               Computer Science student passionate about Frontend Development and
               UX/UI design. I enjoy building clean, user-friendly interfaces and
               turning ideas into real web experiences.
@@ -66,7 +66,7 @@ function Aboutme() {
         </div>
         <div className="text-6xl md:text-8xl pb-8 font-semibold self-end justify-end items-end text-right">
           <div>
-            <div className="grid text-5xl lg:text-8xl font-semibold md:mt-15 min-h-10 lg:min-h-55">
+            <div className="text-5xl lg:text-6xl xl:text-8xl font-semibold md:mt-15 min-h-10 lg:min-h-55">
               <TextType
                 text="UX/UI"
                 as="p"
